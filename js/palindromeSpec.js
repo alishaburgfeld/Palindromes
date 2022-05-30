@@ -2,6 +2,8 @@
 
 var pal = require("./palindrome");
 
+const arrayEquals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
 console.log(pal.palindrome('racecar') === true);
 console.log(pal.palindrome('Noon') === true);
 console.log(pal.palindrome('ciVic') === true);
